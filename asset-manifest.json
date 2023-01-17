@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cart-sushi/static/css/main.e6c13ad2.css",
+    "main.js": "/cart-sushi/static/js/main.68bcb05a.js",
+    "index.html": "/cart-sushi/index.html",
+    "main.e6c13ad2.css.map": "/cart-sushi/static/css/main.e6c13ad2.css.map",
+    "main.68bcb05a.js.map": "/cart-sushi/static/js/main.68bcb05a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.68bcb05a.js"
+  ]
+}
