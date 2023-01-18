@@ -63,3 +63,31 @@
         transform: scale(1);
     }
 }
+
+@media(max-width: 900px){
+    .button{
+        padding: 1rem 1rem;
+    }
+    .button .title{
+        display: none;
+    }
+    .icon{
+        width: 2rem;
+        height: 2rem;
+    }
+    .badge{
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 600px){
+    .button{
+        padding: 0.8rem 1rem;
+    }
+    .icon{
+        margin-right: 0.3rem;
+    }
+    .badge{
+        padding: 0.1rem .6rem;
+    }
+}

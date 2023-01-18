@@ -6,7 +6,7 @@ const HeaderCartButton = props => {
             <span className={styles.icon}>
                 <CartIcon/>
             </span>
-            <span>
+            <span className={styles.title}>
                 Корзина
             </span>
             <span className={styles.badge}>
