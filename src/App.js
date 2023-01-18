@@ -1,9 +1,12 @@
 import Header from "./components/Layout/Header";
-
+import FoodList from "./components/Food/FoodList";
 function App() {
   return (
     <div className="App">
-        <Header/>
+        <div className="wrapper">
+            <Header/>
+            <FoodList/>
+        </div>
     </div>
   );
 }

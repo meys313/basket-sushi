@@ -8,9 +8,6 @@ const Header = props => {
                 <h1>Закажи суши</h1>
                 <HeaderCartButton/>
             </header>
-            {/*<div className={styles['main-image']}>*/}
-            {/*    <img src={headerBgImg}/>*/}
-            {/*</div>*/}
         </React.Fragment>
     )
 }

@@ -4,7 +4,7 @@
     border: none;
     background-color: #000;
     color: white;
-    padding: 1rem 3rem;
+    padding: 1.5rem 3.5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -12,15 +12,17 @@
     font-weight: bold;
     transition: all .2s;
 }
-
+.title{
+    font-size: 20px;
+}
 .button:hover,
 .button:active {
     background-color: #F28D66;
 }
 
 .icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     margin-right: 1rem;
 }
 
