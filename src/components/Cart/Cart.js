@@ -1,23 +1,48 @@
 import styles from './Cart.module.css';
 import Modal from "../UI/Modal";
+import {useContext} from "react";
+import CartContext from "../../store/cart-context";
+import CartItem from "./CartItem";
 const Cart = props => {
+
+    const cartContext = useContext(CartContext);
+    const totalAmount = `${cartContext.totalAmount.toFixed(2)} $`;
+
+    const removeCartItemHandler = (id) =>{
+
+    }
+    const addCartItemHandler = (item) => {
+
+    }
     const cartItems = (
         <ul className={styles['cart-items']}>
             {
-                [{id:"m1", name: "sushi", amount: 2, price: 10.99}].map(item => <li>{item.name}</li>)
+                cartContext.items.map(item => <CartItem
+                    key={item.id}
+                    item = {item}
+                    onAdd = {addCartItemHandler.bind(null, item)}
+                    onRemove={removeCartItemHandler.bind(null, item.id)}/>
+                )
             }
         </ul>
     )
-
+    if (cartContext.items.length === 0) { return <Modal onDisplayCart = {props.onDisplayCart}>
+        <div className={styles.total}>
+            <span>Ваша корзина пуста :( </span>
+        </div>
+        <div className={styles.actions}>
+            <button className={styles['button--alt']} onClick={props.onDisplayCart}>закрыть</button>
+        </div>
+    </Modal> }
     return <Modal onDisplayCart = {props.onDisplayCart}>
         {cartItems}
         <div className={styles.total}>
             <span>Итого</span>
-            <span>49.99</span>
+            <span>{totalAmount}</span>
         </div>
         <div className={styles.actions}>
             <button className={styles['button--alt']} onClick={props.onDisplayCart}>Закрыть</button>
-            <button className={styles.button}>Заказать</button>
+            <button className={styles.button} disabled={true}>Заказать</button>
         </div>
     </Modal>
 }
