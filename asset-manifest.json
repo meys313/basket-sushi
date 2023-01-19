@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cart-sushi/static/css/main.f176100a.css",
-    "main.js": "/cart-sushi/static/js/main.15ffa45b.js",
+    "main.js": "/cart-sushi/static/js/main.d141b44c.js",
     "static/media/header-bg(2).jpg": "/cart-sushi/static/media/header-bg(2).c26a436dac7be2d5032b.jpg",
     "index.html": "/cart-sushi/index.html",
     "main.f176100a.css.map": "/cart-sushi/static/css/main.f176100a.css.map",
-    "main.15ffa45b.js.map": "/cart-sushi/static/js/main.15ffa45b.js.map"
+    "main.d141b44c.js.map": "/cart-sushi/static/js/main.d141b44c.js.map"
   },
   "entrypoints": [
     "static/css/main.f176100a.css",
-    "static/js/main.15ffa45b.js"
+    "static/js/main.d141b44c.js"
   ]
 }
