@@ -22,3 +22,27 @@
     color: #E15B8C;
     font-size: 1.3rem;
 }
+
+@media(max-width:900px){
+    .content{
+        flex-basis: 90%;
+    }
+    .content p{
+        max-width: 70%;
+    }
+}
+
+@media(max-width:900px){
+    .content p{
+        max-width: 90%;
+    }
+}
+
+@media(max-width: 370px){
+    .food-item{
+        flex-direction: column;
+    }
+    .content{
+        margin-bottom: 2rem;
+    }
+}
